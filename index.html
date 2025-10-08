@@ -15,7 +15,7 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
-      <div class="nav-brand">NK</div>
+      <div class="nav-brand">Nishka Katoch</div>
       <div class="nav-links">
         <a href="#skills">Skills</a>
         <a href="#news">News</a>
@@ -35,8 +35,8 @@
         <h1>Nishka Katoch</h1>
         <div class="tagline">ML Researcher | Computer Vision | Generative AI</div>
         <p class="intro">
-          I am a machine learning researcher with a Master's in Computer Science from <a href="https://www.umontreal.ca/en/" target="_blank">The University of Montreal</a> and <a href="https://mila.quebec/en" target="_blank">Mila</a>, and currently an intern at <a href="https://www.techmahindra.com/makers-lab/" target="_blank">Tech Mahindra Maker's Lab</a>. 
-          My work spans computer vision, generative AI, and domain adaptation, with a focus on building privacy-preserving and adaptable AI systems for real-world settings.
+          I am a machine learning researcher with a Master's in Computer Science from <a href="https://www.umontreal.ca/en/" target="_blank">The University of Montreal</a> and <a href="https://mila.quebec/en" target="_blank">Mila</a>. I am currently an intern at <a href="https://www.techmahindra.com/makers-lab/" target="_blank">Tech Mahindra Maker's Lab</a>. 
+          My work spans computer vision, generative AI, and domain adaptation with a focus on building privacy-preserving and adaptable AI systems for real-world settings.
         </p>
         <p class="research">
           At the University of Montreal and Mila, I pursued my Master's as part of the <a href="https://neuro.polymtl.ca/" target="_blank">NeuroPoly Lab</a> at <a href="https://www.polymtl.ca/en/" target="_blank">Polytechnique Montréal</a> under the supervision of <a href="https://scholar.google.com/citations?user=6cAZ028AAAAJ&hl=en" target="_blank">Prof. Julien Cohen-Adad</a> and <a href="https://scholar.google.com/citations?user=g0k3SjcAAAAJ&hl=en" target="_blank">Prof. Guy Wolf</a>, where my thesis explored multi-contrast image translation for axon and myelin segmentation using diffusion-based frameworks to generate privacy-preserving synthetic microscopy images.
@@ -45,15 +45,15 @@
       <div class="profile-card">
         <img src="images/Nishka-portrait.jpg" alt="Nishka Katoch" class="profile-img">
         <div class="profile-details">
-            <div class="profile-item">
+            <div class="profile-item" onclick="openInfoModal('locationModal')" style="cursor: pointer;">
                 <span class="profile-icon">📍</span>
                 <span class="profile-text">Montreal</span>
               </div>
-              <div class="profile-item">
+              <div class="profile-item" onclick="openInfoModal('languageModal')" style="cursor: pointer;">
                 <span class="profile-icon">💬</span>
                 <span class="profile-text">English, Hindi, French</span>
               </div>
-              <div class="profile-item">
+              <div class="profile-item" onclick="openInfoModal('hobbiesModal')" style="cursor: pointer;">
                 <span class="profile-icon">✨</span>
                 <span class="profile-text">Crochet, Knit, Philosophy</span>
               </div>
@@ -195,7 +195,7 @@
       <h2>Selected Projects & Publications</h2>
       <div class="projects-grid">
         <div class="project-card" onclick="openModal('modal1')">
-          <img src="images/miccai_figure_methods.png" alt="MICCAI Project" class="project-image">
+          <img src="images/miccai_res.png" alt="MICCAI Project" class="project-image">
           <div class="project-content">
             <div class="project-title">Unpaired Modality Translation for Pseudo Labeling</div>
             <div class="project-venue">MICCAI 2024</div>
@@ -262,15 +262,6 @@
               <div class="project-description">Characterizes cellular heterogeneity in Alzheimer's disease by analyzing single-cell RNA-seq data.</div>
             </div>
         </div>
-        <div class="project-card" onclick="openModal('modal7')">
-            <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" class="project-image"> -->
-            <div class="project-content">
-                <div class="project-title">Indus: Multilingual Speech Recognition for Indic Languages</div>
-                <div class="project-venue">ML Research Intern </div>
-                <div class="project-authors">Tech Mahindra, Maker's Lab</div>
-                <div class="project-description">Production-ready Hindi ASR system with comprehensive benchmarking of transformer architectures for multilingual speech-to-text applications.</div>
-            </div>
-        </div>
 
         <div class="project-card" onclick="openModal('modal8')">
             <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" class="project-image"> -->
@@ -311,7 +302,89 @@
     </div>
   </footer>
 
-  <!-- Modals -->
+  <!-- Language Modal - Updated (Smaller, No TOEFL, Rectangular Bars) -->
+<div class="modal" id="languageModal">
+    <div class="modal-content language-modal-content">
+      <button class="modal-close" onclick="closeInfoModal('languageModal')">×</button>
+      <div class="modal-body">
+        <h2 class="modal-title">Language Proficiency</h2>
+        
+        <div class="language-bar">
+          <label>English</label>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 0%" data-width="100%">
+              <span class="bar-percentage">Fluent</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="language-bar">
+          <label>Hindi</label>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 0%" data-width="100%">
+              <span class="bar-percentage">Native</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="language-bar">
+          <label>French</label>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 0%" data-width="70%">
+              <span class="bar-percentage">Intermediate</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <!-- Hobbies Modal - Updated (Larger) -->
+  <div class="modal" id="hobbiesModal">
+    <div class="modal-content hobbies-modal-content">
+      <button class="modal-close" onclick="closeInfoModal('hobbiesModal')">×</button>
+      <div class="modal-body">
+        <h2 class="modal-title">Hobbies & Interests</h2>
+        
+        <div class="hobbies-grid">
+          <div class="hobby-item">
+            <img src="images/crochet.webp" alt="Crochet">
+            <h3>🧶 Crochet</h3>
+            <p><strong>Favorite Project:</strong><br>Existential Crisi Tapestry</p>
+          </div>
+          <div class="hobby-item">
+            <img src="images/knit.png" alt="Knitting">
+            <h3>🧵 Knitting</h3>
+            <p><strong>Current Creation:</strong><br>Tied & True Tank Top</p>
+          </div>
+          <div class="hobby-item">
+            <img src="images/sophie's_world.jpg" alt="Philosophy">
+            <h3>📚 Philosophy</h3>
+            <p><strong>Current Interest:</strong><br>Sophie's World</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <!-- Location Modal - Updated (Fixed opening issue) -->
+  <div class="modal" id="locationModal">
+    <div class="modal-content info-modal-content">
+      <button class="modal-close" onclick="closeInfoModal('locationModal')">×</button>
+      <div class="modal-body">
+        <h2 class="modal-title">My Favorite Places in Montreal</h2>
+        <div class="map-container">
+          <!-- Link to the Map: https://umap.openstreetmap.fr/en/map/untitled-map_1294605  -->
+          <iframe src="https://umap.openstreetmap.fr/en/map/untitled-map_1294605?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p style="margin-top: 20px; color: var(--text-secondary); text-align: center;">Hover over the pins to see my favorite spots!</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project Modals -->
   <div class="modal" id="modal1">
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('modal1')">×</button>
@@ -332,11 +405,11 @@
             <a href="https://link.springer.com/chapter/10.1007/978-3-031-72744-3_6" target="_blank" class="modal-link">Paper</a>
           </div>
         </div>
-        <img src="images/miccai_figure_methods.png" alt="MICCAI Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
         <div class="modal-description">
-          <p>Addressing the critical challenge of limited annotated data in biomedical imaging, I developed a microscopy pseudo-labeling pipeline using unsupervised image translation techniques. The system generated high-quality pseudo labels by translating between labeled and unlabeled domains without requiring prior annotation in the target domain. By implementing a SyncDiff-based domain adaptation pipeline with VQ-VAE compression, I improved segmentation accuracy on out-of-distribution microscopy data by 12% while accelerating training speeds and maintaining 95% image fidelity.</p>
-          <p>The method was validated across three increasingly dissimilar image domains, achieving a mean Dice score of 0.736 ± 0.005 on Scanning Electron Microscopy (SEM) datasets using synthetic data translated from Transmission Electron Microscopy (TEM). This approach significantly accelerated the annotation process by providing researchers with refined starting points for manual labeling, bridging the gap between different microscopy modalities in biomedical research.</p>
+            <p>Addressing the critical challenge of limited annotated data in biomedical imaging, I developed a microscopy pseudo-labeling pipeline using unsupervised image translation techniques. The system generated high-quality pseudo labels by translating between labeled and unlabeled domains without requiring prior annotation in the target domain. By implementing a SyncDiff-based domain adaptation pipeline with VQ-VAE compression, I improved segmentation accuracy on out-of-distribution microscopy data by 12% while accelerating training speeds and maintaining 95% image fidelity.</p>
+            <p>The method was validated across three increasingly dissimilar image domains, achieving a mean Dice score of 0.736 ± 0.005 on Scanning Electron Microscopy (SEM) datasets using synthetic data translated from Transmission Electron Microscopy (TEM). This approach significantly accelerated the annotation process by providing researchers with refined starting points for manual labeling, bridging the gap between different microscopy modalities in biomedical research.</p>
         </div>
+        <img src="images/miccai_figure_methods.png" alt="MICCAI Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
       </div>
     </div>
   </div>
@@ -362,11 +435,11 @@
             <a href="https://hdl.handle.net/1866/41174" target="_blank" class="modal-link">Thesis</a>
           </div>
         </div>
-        <img src="images/thesis_process.png" alt="Thesis Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
         <div class="modal-description">
           <p>To address data scarcity in neurodegenerative disease research, I developed a privacy-preserving image translation framework using latent diffusion models for histological image analysis. The system converted source images into latent encodings and reconstructed them across different modalities using guided diffusion models, with segmentation masks integrated directly into the latent space. This architecture enabled domain adaptation without requiring access to real patient data, ensuring compliance with medical privacy regulations.</p>
           <p>The framework achieved an 80% Dice score using synthetic contrast data, demonstrating effective segmentation performance on neurological tissue across diverse electron microscopy modalities. By minimizing the number of translation models required and operating entirely on latent encodings, this approach offered a scalable solution for studying Alzheimer's disease and multiple sclerosis while maintaining strict data privacy standards.</p>
         </div>
+        <img src="images/thesis_process.png" alt="Thesis Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
       </div>
     </div>
   </div>
@@ -388,12 +461,15 @@
             <span class="skill-tag">Self-Supervised Learning</span>
             <span class="skill-tag">Python</span>
           </div>
+          <div class="modal-links">
+            <a href="data/NSL_SpeechBrain_Project.pdf" target="_blank" class="modal-link">Report</a>
+          </div>
         </div>
-        <img src="images/scale_proj.png" alt="Scaling Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
         <div class="modal-description">
           <p>I conducted a comprehensive empirical study on the scaling properties of speech recognition and natural language understanding models in multispeaker settings. The research examined CTC-based speech recognition with pretrained wav2vec2 encoders and a bimodal NLU intent classification model, comparing different audio preprocessing approaches including raw features, RAVE variational autoencoder latents, and wav2vec2 acoustic representations. Through systematic benchmarking, I derived predictive scaling laws: power laws for ASR and audio accuracy, and logarithmic laws for text-to-audio embedding similarity.</p>
           <p>The findings revealed that wav2vec2-based models followed predictable scaling patterns with optimal performance at specific model widths and layer counts. Pretrained acoustic models demonstrated superior scaling compared to training from scratch, with wav2vec2 offering the greatest advantage. These insights directly informed efficient deployment strategies for multilingual ASR systems in low-resource environments, helping organizations optimize model selection based on available data and computational constraints.</p>
         </div>
+        <img src="images/scale_proj.png" alt="Scaling Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
       </div>
     </div>
   </div>
@@ -415,12 +491,15 @@
             <span class="skill-tag">Scanpy</span>
             <span class="skill-tag">Clustering</span>
           </div>
+          <div class="modal-links">
+            <a href="data/project_weeds.pdf" target="_blank" class="modal-link">Report</a>
+          </div>
         </div>
-        <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
         <div class="modal-description">
           <p>I led a comprehensive analysis of single-nucleus transcriptomes from the prefrontal cortex of 48 individuals to understand the cellular context of Alzheimer's disease pathology. Using six different dimensionality reduction and visualization methods—including Truncated TSVD, kernel PCA, Isomaps, t-SNE, UMAP, and PHATE—I revealed distinct geometrical structures in cell-type distributions and identified fine-grain patterns correlating with AD progression markers (CERAD scores and Braak stages).</p>
           <p>The analysis uncovered cell-type-specific pathological associations, identifying Mic1 as an AD-associated subpopulation and Oli1 as a no-pathology subpopulation. Visualizations revealed a gender bias in AD diagnosis prevalence among females, aligning with findings in existing literature. This multi-scale approach to genetic and clinical feature exploration provides a foundation for identifying AD-pathology-associated cell populations and potential biomarkers for early disease detection.</p>
         </div>
+        <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
       </div>
     </div>
   </div>
@@ -493,6 +572,9 @@
             <span class="skill-tag">wav2vec2</span>
             <span class="skill-tag">Model Benchmarking</span>
             <span class="skill-tag">Indic Language Models</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://www.techmahindra.com/makers-lab/indus-project/" target="_blank" class="modal-link">Link</a>
           </div>
         </div>
         <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;"> -->
@@ -568,6 +650,32 @@
         html.setAttribute('data-theme', 'dark');
         themeIcon.textContent = '☀️';
       }
+    }
+    // Info Modal Functions (Location, Language, Hobbies)
+    function openInfoModal(modalId) {
+    document.getElementById(modalId).classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Animate language bars when modal opens
+    if (modalId === 'languageModal') {
+        setTimeout(() => {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            bar.style.width = bar.getAttribute('data-width');
+        });
+        }, 100);
+    }
+    }
+
+    function closeInfoModal(modalId) {
+    document.getElementById(modalId).classList.remove('active');
+    document.body.style.overflow = 'auto';
+    
+    // Reset language bars
+    if (modalId === 'languageModal') {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+        bar.style.width = '0%';
+        });
+    }
     }
 
     // Modal Functions
