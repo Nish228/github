@@ -270,15 +270,26 @@
           </div>
         </div>
         <div class="project-card" onclick="openModal('modal5')">
-            <img src="images/makers_lab.jpg" alt="Makers Lab" class="project-image">
-            <div class="project-content">
-              <div class="project-title">RAG Systems & Quantum Deepfake Detection</div>
-              <div class="project-venue">AI Research Intern | Team Lead</div>
+          <img src="images/Quant_deepfake.png" alt="Quantum-Classical Deepfake 1" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+          <div class="project-content">
+              <div class="project-title">Hybrid Quantum-Classical Models for Deepfake Image Detection</div>
+              <div class="project-venue">Quantum ML Research Intern</div>
               <div class="project-authors">Tech Mahindra, Maker's Lab</div>
-              <div class="project-description"> Research leadership in RAG embedding optimization and quantum-enhanced deepfake detection for enterprise AI applications.</div>
+              <div class="project-description"> Hybrid classical-quantum architecture combining Vision Transformers with Parameterized Quantum Circuits to detect AI-generated synthetic images from Flux, DALL-E, and Gemini across financial, identity verification, and e-commerce applications.</div>
               <div class="project-link-indicator">🔗 Click for details</div> 
 
             </div>
+        </div>
+        <div class="project-card" onclick="openModal('modal10')">
+          <img src="images/Vect_Quant.png" alt="Makers Lab" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Vector Quantization Benchmarking for RAG Systems</div>
+            <div class="project-venue">AI Research Intern | Team Lead</div>
+            <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+            <div class="project-description"> Led technical architecture and research for a comprehensive vector quantization benchmarking framework, designing a modular pipeline achieving 8-32x compression ratios for Tech Mahindra's SharePoint document retrieval system.</div>
+            <div class="project-link-indicator">🔗 Click for details</div> 
+
+          </div>
         </div>
         <div class="project-card" onclick="openModal('modal7')">
             <img src="images/makers_lab.jpg" alt="Makers Lab" class="project-image">
@@ -585,24 +596,54 @@
       <button class="modal-close" onclick="closeModal('modal5')">×</button>
       <div class="modal-body">
         <div class="modal-header">
+          <h2 class="modal-title">Hybrid Quantum-Classical Models for Deepfake Image Detection</h2>
+          <div class="project-venue">Quantum ML Research Intern</div>
+          <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Quantum Machine Learning </span>
+            <span class="skill-tag">Quantum Computing</span>
+            <span class="skill-tag">CaiT (Vision Transformers)</span>
+            <span class="skill-tag">Parameterized Quantum Circuits</span>
+            <span class="skill-tag">Binary Cross-Entropy Optimization</span>
+            <span class="skill-tag">Deepfake Detection</span>
+            <span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>Developed a novel hybrid classical-quantum architecture for detecting AI-generated synthetic images by leveraging Parameterized Quantum Circuits (PQC) for binary classification. The system combines traditional deep learning feature extraction with quantum neural networks to identify manipulated content from contemporary generative models including Flux, DALL-E, and Gemini.</p>
+          <p>Implemented a multi-stage pipeline featuring Class Attention Vision Transformer (CaiT) for feature extraction, reducing high-dimensional image data to 64-dimensional feature vectors suitable for quantum processing. Designed and evaluated quantum circuits with 4 and 8 qubits using Hadamard gates for superposition, Rotation-Y gates for parameterization, and CNOT gates for entanglement. Explored two architectural approaches: a linear 8-qubit circuit duplicating the 4-qubit structure, and a hierarchical circuit with cross-entanglement distinguishing between coarse and fine feature groups for multi-scale learning.</p>
+          <p>The research addressed critical challenges at the classical-quantum interface, including dimensionality reduction, quantum encoding strategies, and circuit depth optimization. This work demonstrates the potential of quantum computing to enhance pattern recognition in deepfake detection while identifying practical deployment considerations for hybrid quantum-classical systems in computer vision applications across financial services, identity verification, e-commerce, and legal compliance.</p>
+        </div>
+        <img src="images/Quant_deepfake.png" alt="Quantum-Classical Deepfake" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal10">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal10')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
           <h2 class="modal-title">RAG Systems & Quantum Deepfake Detection</h2>
           <div class="project-venue">AI Research Intern | Team Lead</div>
           <div class="project-authors">Tech Mahindra, Maker's Lab</div>
           <div class="modal-skills">
             <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
             <span class="skill-tag">Embedding Models</span>
-            <span class="skill-tag">Milvus</span>
+            <span class="skill-tag">Vector Databases</span>
             <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Generative Adversarial Networks (GANs)</span>
-            <span class="skill-tag">Deepfake Detection</span>
-            <span class="skill-tag">Quantum Computing</span>
+            <span class="skill-tag">Product Quantization</span>
+            <span class="skill-tag">Milvus</span>
+            <span class="skill-tag">Document Retrieval Systems</span>
           </div>
         </div>
         <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;"> -->
         <div class="modal-description">
-          <p>As team lead for the intern cohort, I'm directing two cutting-edge deep learning research initiatives: benchmarking embedding models and vector quantization techniques for scalable Retrieval-Augmented Generation (RAG) systems, and enhancing GAN-based deepfake detection through quantum algorithm integration. I develop and test complete pipelines using Docker and Milvus, systematically evaluating trade-offs in accuracy, latency, and memory consumption to optimize enterprise-scale deployment.</p>
-          <p>I'm advancing a patented deepfake detection pipeline by integrating Generative Adversarial Networks with quantum algorithms, improving the system's resilience against state-of-the-art synthetic image generation techniques. This work addresses the growing challenge of distinguishing authentic media from AI-generated content, with potential applications in content verification, media forensics, and security systems.</p>
+          <p>Led the technical design and research architecture for a comprehensive benchmarking framework evaluating embedding generation and vector quantization techniques for Tech Mahindra's SharePoint Retrieval-Augmented Generation (RAG) system. Coordinated a team of interns to develop a Python-based pipeline addressing performance and scalability challenges in enterprise document retrieval systems.</p>
+          <p>Designed a modular five-component architecture encompassing PDF document processing with PyMuPDF, embedding generation using the Nomic model (768-dimensional vectors), vector database operations with Milvus Lite, Product Quantization benchmarking with FAISS, and comprehensive reporting analytics. The system was architected to achieve 8-32x compression ratios while maintaining search accuracy through systematic evaluation of quantization parameters (16 subvectors, 4-8 bits per subvector).</p>
+          <p>Conducted extensive research on vector quantization methods, synthesizing technical knowledge from foundational papers on Product Quantization and modern similarity search approaches. Established technology stack decisions, distributed team responsibilities, and provided technical mentorship on embedding models, vector databases, and accuracy-storage trade-offs. Created detailed architectural specifications and experimental workflow design covering initialization, document processing, embedding generation, vector storage, benchmarking, and results reporting phases.</p>
         </div>
+        <img src="images/Vect_Quant.png" alt="Vector Quantization" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
       </div>
     </div>
   </div>
@@ -623,7 +664,6 @@
             <span class="skill-tag">Generative AI</span>
           </div>
         </div>
-        <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;"> -->
         <div class="modal-description">
           <p>I developed an end-to-end computer vision pipeline for automated interior design generation, leveraging the Segment Anything Model (SAM) for precise scene segmentation combined with diffusion models to create diverse design variations from raw house images. The system processed input photographs, identified structural and decorative elements, and generated multiple stylistically coherent design alternatives while maintaining spatial constraints.</p>
           <p>I designed a text-to-image control interface that enabled natural language-based customization of design outputs, allowing users to specify style preferences, color schemes, and furniture arrangements through conversational prompts. This project bridged the gap between AI capabilities and practical interior design applications, making professional-quality design exploration accessible to homeowners and designers.</p>
@@ -706,12 +746,13 @@
             <a href="https://drive.google.com/file/d/1XHRcKnobrHgrDF_-6UR6Qu7vBS-zXSWb/view" target="_blank" class="modal-link">Link</a>
           </div>
         </div>
-        <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;"> -->
         <div class="modal-description">
           <p>I investigated predator-prey behavioral dynamics in UAV swarms, exploring how multi-agent systems could coordinate in competitive scenarios. I built a ROS-Unity integration achieving sub-80ms latency for real-time VR simulations, enabling researchers to visualize and interact with swarm behaviors in immersive environments.</p>
           <p>The simulation framework modeled emergent behaviors in multi-agent collaboration, providing insights into coordination strategies, pursuit-evasion tactics, and collective decision-making. This research had applications in autonomous drone systems for search-and-rescue operations, surveillance, and adversarial robotics scenarios where multiple agents must adapt to dynamic, competitive environments.</p>
           <p>Submitted to HRI 2020, a ACM/IEEE International Conference on Human-Robot Interaction.</p>
         </div>
+        <img src="images/Sheep_Swarm.jpg" alt="Sheep Swarm" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+        <img src="images/Unity_ROS.png" alt="Unity ROS" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
       </div>
     </div>
   </div>
