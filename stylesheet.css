@@ -9,8 +9,8 @@
     --bg-accent: #EBE4D1;
     --text-primary: #2C2416;
     --text-secondary: #5C5349;
-    --accent-main: #8B6F47;
-    --accent-hover: #6B5437;
+    --accent-main: #A24C50;
+    --accent-hover: #87393E;
     --border-color: #D4C9B5;
     --card-bg: #FFFFFF;
     --shadow: rgba(44, 36, 22, 0.08);
@@ -47,6 +47,24 @@
     line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
+
+  /* ===================================
+    Icons
+    =================================== */
+  .icon {
+    width: 20px;
+    height: 20px;
+    color: var(--accent-main);
+  }
+  .icon:hover {
+    color: var(--accent-hover);
+  }
+  .icon-link {
+    width: 20px;
+    height: 20px;
+    color: var(--bg-primary);
+  }
+
   
   /* ===================================
      Navigation
