@@ -1,0 +1,599 @@
+<!DOCTYPE HTML>
+<html lang="en" data-theme="dark">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>All Projects | Nishka Katoch</title>
+  <meta name="author" content="Nishka Katoch">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/Initial_Cross.png">
+  <link rel="shortcut icon" type="image/png" href="images/Initial_Cross.png">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Full list of Nishka Katoch's projects and publications spanning computer vision, generative AI, AI safety, and applied machine learning.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nish228.github.io/projects.html">
+</head>
+
+<body class="has-fixed-footer">
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand" style="text-decoration:none;">Nishka Katoch</a>
+      <div class="nav-links">
+        <a href="data/Nishka_Katoch_CV.pdf" target="_blank">Resume</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#news">News</a>
+        <a href="index.html#contact">Contact</a>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <a href="index.html#projects" class="blog-post-back">← Back to home</a>
+
+    <section class="projects-section" id="all-projects">
+      <h2>All Projects & Publications</h2>
+      <div class="projects-grid">
+        <div class="project-card" onclick="openModal('modal12')">
+          <div class="project-content">
+            <div class="project-title">UAV Scene Matching</div>
+            <div class="project-venue">AI Engineer</div>
+            <div class="project-authors">Inferigence Quotient</div>
+            <div class="project-description">Built cross-view localization systems matching UAV imagery against satellite and thermal imagery.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal1')">
+          <img src="images/miccai_res.png" alt="MICCAI Project" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Unpaired Modality Translation for Pseudo Labeling</div>
+            <div class="project-venue">MICCAI 2024</div>
+            <div class="project-authors">Arthur Boschet, Armand Collin, <strong>Nishka Katoch</strong>, Julien Cohen-Adad</div>
+            <div class="project-description">Unpaired image translation method to generate pseudo labels for histology image segmentation without requiring annotations in the target domain.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal2')">
+          <img src="images/thesis_process.png" alt="Thesis Project" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Multi-contrast Image Translation for Axon Segmentation</div>
+            <div class="project-venue">Master's Thesis</div>
+            <div class="project-authors"><strong>Nishka Katoch</strong>, Julien Cohen-Adad, Guy Wolf</div>
+            <div class="project-description">Multi-contrast Image-to-Image Translation Framework to improve Axon and Myelin segmentation in histological images.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+        <div class="project-card" onclick="openModal('modal5')">
+          <img src="images/Quant_deepfake.png" alt="Quantum-Classical Deepfake 1" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+          <div class="project-content">
+              <div class="project-title">Hybrid Quantum-Classical Models for Deepfake Image Detection</div>
+              <div class="project-venue">Quantum ML Research Intern</div>
+              <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+              <div class="project-description"> Hybrid classical-quantum architecture combining Vision Transformers with Parameterized Quantum Circuits to detect AI-generated synthetic images from Flux, DALL-E, and Gemini across financial, identity verification, and e-commerce applications.</div>
+              <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+
+            </div>
+        </div>
+        <div class="project-card" onclick="openModal('modal10')">
+          <img src="images/Vect_Quant.png" alt="Makers Lab" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Vector Quantization Benchmarking for RAG Systems</div>
+            <div class="project-venue">AI Research Intern | Team Lead</div>
+            <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+            <div class="project-description"> Led technical architecture and research for a comprehensive vector quantization benchmarking framework, designing a modular pipeline achieving 8-32x compression ratios for Tech Mahindra's SharePoint document retrieval system.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+
+          </div>
+        </div>
+        <div class="project-card" onclick="openModal('modal7')">
+            <img src="images/makers_lab.jpg" alt="Makers Lab" class="project-image">
+            <div class="project-content">
+                <div class="project-title">Indus: Multilingual Speech Recognition for Indic Languages</div>
+                <div class="project-venue">ML Research Intern </div>
+                <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+                <div class="project-description">Production-ready Hindi ASR system with comprehensive benchmarking of transformer architectures for multilingual speech-to-text applications.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal6')">
+            <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" class="project-image"> -->
+            <div class="project-content">
+              <div class="project-title">Smart Home Design Pipeline</div>
+              <div class="project-venue">ML Development Intern</div>
+              <div class="project-authors">Custom Quality Build</div>
+              <div class="project-description">Characterizes cellular heterogeneity in Alzheimer's disease by analyzing single-cell RNA-seq data.</div>
+              <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal3')">
+          <img src="images/scale_proj.png" alt="Scaling Study" class="project-image">
+          <div class="project-content">
+            <div class="project-title">SpeechBrain Scaling Study</div>
+            <div class="project-venue">Research Project</div>
+            <div class="project-authors"><strong>Nishka Katoch*</strong>, Artem Ploujnikov*</div>
+            <div class="project-description">Analyzes the scaling behavior of speech recognition and bimodal NLU models using unsupervised audio-text embeddings.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal4')">
+          <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Single-Cell Analysis of Alzheimer's Disease</div>
+            <div class="project-venue">Research Project</div>
+            <div class="project-authors">Shuang Ni*, <strong>Nishka Katoch*</strong>, Timur Zhanabaev*</div>
+            <div class="project-description">Characterizes cellular heterogeneity in Alzheimer's disease by analyzing single-cell RNA-seq data.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal8')">
+            <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" class="project-image"> -->
+            <div class="project-content">
+                <div class="project-title">DLW Railway Workflow Digitization Platform</div>
+                <div class="project-venue">Web Application Development Intern </div>
+                <div class="project-authors">CRIS</div>
+                <div class="project-description">Django-based workflow digitization system for railway operations with database optimization and developer mentorship initiatives.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal9')">
+            <img src="images/Unity_ROS.png" alt="UAV Swarm" class="project-image">
+            <div class="project-content">
+                <div class="project-title">UAV Swarm Predator-Prey Dynamics Research</div>
+                <div class="project-venue">Research Intern </div>
+                <div class="project-authors">P.B.Sujit, <strong>Nishka Katoch</strong></div>
+                <div class="project-description">Real-time VR simulation framework for studying emergent multi-agent behaviors in competitive UAV swarm scenarios.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal11')">
+            <img src="images/hf_icml_img.png" alt="ICML Reproduction Challenge" class="project-image">
+            <div class="project-content">
+                <div class="project-title">ICML 2026 Reproduction Challenge</div>
+                <div class="project-venue">Open Source</div>
+                <div class="project-authors">Hugging Face</div>
+                <div class="project-description">Reproduced three papers spanning LLM evaluation, agent behavior and cross-view geolocation.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+            </div>
+        </div>
+
+        <a href="blog/gold-mine-ai-deception.html" class="project-card">
+            <img src="images/grid-overview.png" alt="Grid Overview" class="project-image">
+            <div class="project-content">
+                <div class="project-title">Survival Over Scrutiny: Probing Oversight Evasion in an LLM Agent</div>
+                <div class="project-venue">Blog · AI Safety</div>
+                <div class="project-authors">2026</div>
+                <div class="project-description">What happens when an LLM agent is told to be transparent, but is also given a strong incentive to avoid being monitored? A small gold-mining experiment in oversight evasion, reward hacking, and rationalization.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Read post</div>
+            </div>
+        </a>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <h3>Let's Connect</h3>
+      <div class="footer-links">
+        <a href="data/Nishka_Katoch_CV.pdf" target="_blank">CV</a>
+        <a href="mailto:nishkakatoch@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/nishka-katoch/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Nish228" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal1')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Unpaired Modality Translation for Pseudo Labeling of Histology Images</h2>
+          <div class="project-venue">MICCAI 2024</div>
+          <div class="project-authors">Arthur Boschet, Armand Collin, <strong>Nishka Katoch</strong>, Julien Cohen-Adad</div>
+          <div class="modal-skills">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">GANs</span>
+            <span class="skill-tag">Domain Adaptation</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Medical Imaging</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-72744-3_6" target="_blank" class="modal-link">Paper</a>
+          </div>
+        </div>
+        <div class="modal-description">
+            <p>Addressing the critical challenge of limited annotated data in biomedical imaging, I developed a microscopy pseudo-labeling pipeline using unsupervised image translation techniques. The system generated high-quality pseudo labels by translating between labeled and unlabeled domains without requiring prior annotation in the target domain. By implementing a SyncDiff-based domain adaptation pipeline with VQ-VAE compression, I improved segmentation accuracy on out-of-distribution microscopy data by 12% while accelerating training speeds and maintaining 95% image fidelity.</p>
+            <p>The method was validated across three increasingly dissimilar image domains, achieving a mean Dice score of 0.736 ± 0.005 on Scanning Electron Microscopy (SEM) datasets using synthetic data translated from Transmission Electron Microscopy (TEM). This approach significantly accelerated the annotation process by providing researchers with refined starting points for manual labeling, bridging the gap between different microscopy modalities in biomedical research.</p>
+        </div>
+        <img src="images/miccai_figure_methods.png" alt="MICCAI Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal2')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Multi-contrast Image-to-Image Translation for Axon and Myelin Segmentation</h2>
+          <div class="project-venue">Master's Thesis</div>
+          <div class="project-authors"><strong>Nishka Katoch</strong>, Julien Cohen-Adad, Guy Wolf</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Diffusion Models</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Image Translation</span>
+            <span class="skill-tag">Privacy-Preserving AI</span>
+            <span class="skill-tag">Medical Imaging</span>
+            <span class="skill-tag">Segmentation</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://hdl.handle.net/1866/41174" target="_blank" class="modal-link">Thesis</a>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>To address data scarcity in neurodegenerative disease research, I developed a privacy-preserving image translation framework using latent diffusion models for histological image analysis. The system converted source images into latent encodings and reconstructed them across different modalities using guided diffusion models, with segmentation masks integrated directly into the latent space. This architecture enabled domain adaptation without requiring access to real patient data, ensuring compliance with medical privacy regulations.</p>
+          <p>The framework achieved an 80% Dice score using synthetic contrast data, demonstrating effective segmentation performance on neurological tissue across diverse electron microscopy modalities. By minimizing the number of translation models required and operating entirely on latent encodings, this approach offered a scalable solution for studying Alzheimer's disease and multiple sclerosis while maintaining strict data privacy standards.</p>
+        </div>
+        <img src="images/thesis_process.png" alt="Thesis Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal3')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">SpeechBrain Scaling Study</h2>
+          <div class="project-venue">Research Project</div>
+          <div class="project-authors"><strong>Nishka Katoch*</strong>, Artem Ploujnikov* (* = equal contribution)</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Speech Recognition</span>
+            <span class="skill-tag">Transformers</span>
+            <span class="skill-tag">Scaling Laws</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">NLU</span>
+            <span class="skill-tag">Self-Supervised Learning</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="modal-links">
+            <a href="data/NSL_SpeechBrain_Project.pdf" target="_blank" class="modal-link">Report</a>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I conducted a comprehensive empirical study on the scaling properties of speech recognition and natural language understanding models in multispeaker settings. The research examined CTC-based speech recognition with pretrained wav2vec2 encoders and a bimodal NLU intent classification model, comparing different audio preprocessing approaches including raw features, RAVE variational autoencoder latents, and wav2vec2 acoustic representations. Through systematic benchmarking, I derived predictive scaling laws: power laws for ASR and audio accuracy, and logarithmic laws for text-to-audio embedding similarity.</p>
+          <p>The findings revealed that wav2vec2-based models followed predictable scaling patterns with optimal performance at specific model widths and layer counts. Pretrained acoustic models demonstrated superior scaling compared to training from scratch, with wav2vec2 offering the greatest advantage. These insights directly informed efficient deployment strategies for multilingual ASR systems in low-resource environments, helping organizations optimize model selection based on available data and computational constraints.</p>
+        </div>
+        <img src="images/scale_proj.png" alt="Scaling Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal4')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Single-Cell Transcriptomic Visualization and Analysis of Alzheimer's Disease</h2>
+          <div class="project-venue">Research Project</div>
+          <div class="project-authors">Shuang Ni*, <strong>Nishka Katoch*</strong>, Timur Zhanabaev* (* = equal contribution)</div>
+          <div class="modal-skills">
+            <span class="skill-tag">scRNA-seq Analysis</span>
+            <span class="skill-tag">Bioinformatics</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">UMAP</span>
+            <span class="skill-tag">Scanpy</span>
+            <span class="skill-tag">Clustering</span>
+          </div>
+          <div class="modal-links">
+            <a href="data/project_weeds.pdf" target="_blank" class="modal-link">Report</a>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I led a comprehensive analysis of single-nucleus transcriptomes from the prefrontal cortex of 48 individuals to understand the cellular context of Alzheimer's disease pathology. Using six different dimensionality reduction and visualization methods—including Truncated TSVD, kernel PCA, Isomaps, t-SNE, UMAP, and PHATE—I revealed distinct geometrical structures in cell-type distributions and identified fine-grain patterns correlating with AD progression markers (CERAD scores and Braak stages).</p>
+          <p>The analysis uncovered cell-type-specific pathological associations, identifying Mic1 as an AD-associated subpopulation and Oli1 as a no-pathology subpopulation. Visualizations revealed a gender bias in AD diagnosis prevalence among females, aligning with findings in existing literature. This multi-scale approach to genetic and clinical feature exploration provides a foundation for identifying AD-pathology-associated cell populations and potential biomarkers for early disease detection.</p>
+        </div>
+        <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal5">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal5')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Hybrid Quantum-Classical Models for Deepfake Image Detection</h2>
+          <div class="project-venue">Quantum ML Research Intern</div>
+          <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Quantum Machine Learning </span>
+            <span class="skill-tag">Quantum Computing</span>
+            <span class="skill-tag">CaiT (Vision Transformers)</span>
+            <span class="skill-tag">Parameterized Quantum Circuits</span>
+            <span class="skill-tag">Binary Cross-Entropy Optimization</span>
+            <span class="skill-tag">Deepfake Detection</span>
+            <span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>Developed a novel hybrid classical-quantum architecture for detecting AI-generated synthetic images by leveraging Parameterized Quantum Circuits (PQC) for binary classification. The system combines traditional deep learning feature extraction with quantum neural networks to identify manipulated content from contemporary generative models including Flux, DALL-E, and Gemini.</p>
+          <p>Implemented a multi-stage pipeline featuring Class Attention Vision Transformer (CaiT) for feature extraction, reducing high-dimensional image data to 64-dimensional feature vectors suitable for quantum processing. Designed and evaluated quantum circuits with 4 and 8 qubits using Hadamard gates for superposition, Rotation-Y gates for parameterization, and CNOT gates for entanglement. Explored two architectural approaches: a linear 8-qubit circuit duplicating the 4-qubit structure, and a hierarchical circuit with cross-entanglement distinguishing between coarse and fine feature groups for multi-scale learning.</p>
+          <p>The research addressed critical challenges at the classical-quantum interface, including dimensionality reduction, quantum encoding strategies, and circuit depth optimization. This work demonstrates the potential of quantum computing to enhance pattern recognition in deepfake detection while identifying practical deployment considerations for hybrid quantum-classical systems in computer vision applications across financial services, identity verification, e-commerce, and legal compliance.</p>
+        </div>
+        <img src="images/Quant_deepfake.png" alt="Quantum-Classical Deepfake" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal6">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal6')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Smart Home Design Pipeline</h2>
+          <div class="project-venue">ML Development Intern</div>
+          <div class="project-authors">Custom Quality Build</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Segment Anything Model (SAM)</span>
+            <span class="skill-tag">Diffusion Models</span>
+            <span class="skill-tag">Image Segmentation</span>
+            <span class="skill-tag">Data Visualization</span>
+            <span class="skill-tag">Generative AI</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I developed an end-to-end computer vision pipeline for automated interior design generation, leveraging the Segment Anything Model (SAM) for precise scene segmentation combined with diffusion models to create diverse design variations from raw house images. The system processed input photographs, identified structural and decorative elements, and generated multiple stylistically coherent design alternatives while maintaining spatial constraints.</p>
+          <p>I designed a text-to-image control interface that enabled natural language-based customization of design outputs, allowing users to specify style preferences, color schemes, and furniture arrangements through conversational prompts. This project bridged the gap between AI capabilities and practical interior design applications, making professional-quality design exploration accessible to homeowners and designers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal7">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal7')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Indus: Multilingual Speech Recognition for Indic Languages</h2>
+          <div class="project-venue">ML Research Intern</div>
+          <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Automatic Speech Recognition (ASR)</span>
+            <span class="skill-tag">Speech-to-Text</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Multilingual NLP</span>
+            <span class="skill-tag">wav2vec2</span>
+            <span class="skill-tag">Model Benchmarking</span>
+            <span class="skill-tag">Indic Language Models</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://www.techmahindra.com/makers-lab/indus-project/" target="_blank" class="modal-link">Link</a>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I designed and deployed a production-ready Hindi Automatic Speech Recognition (ASR) system achieving over 90% accuracy across diverse regional datasets and dialectal variations. Through systematic fine-tuning of Indic language models, I improved robustness for multilingual speech-to-text tasks, addressing the unique phonetic and linguistic challenges of Hindi and its dialects.</p>
+          <p>Conducted an extensive comparative analysis of 20+ ASR and transformer-based architectures, evaluating performance trade-offs across accuracy, latency, and computational requirements. This research informed strategic decisions on model selection and optimization approaches, establishing best practices for deploying ASR systems in low-resource language environments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal8">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal8')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">DLW Railway Workflow Digitization Platform</h2>
+          <div class="project-venue">Web Application Development Intern</div>
+          <div class="project-authors">CRIS</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Web Application Development</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I developed four critical modules for a Django-based web application that digitized manual workflows at the Centre for Railway Information Systems, increasing operational efficiency by 70%. The modules streamlined data entry, processing, and reporting procedures that previously required significant manual intervention.</p>
+          <p>Through database optimization efforts, I reduced redundancy by 60%, significantly enhancing system scalability and improving query performance. Additionally, I mentored junior developers on software engineering best practices, establishing code review processes and documentation standards that improved team productivity and code quality across the organization.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal9">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal9')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">UAV Swarm Predator-Prey Dynamics Research</h2>
+          <div class="project-venue">Research Intern</div>
+          <div class="project-authors">P.B.Sujit, <strong>Nishka Katoch</strong></div>
+          <div class="modal-skills">
+            <span class="skill-tag">ROS (Robot Operating System)</span>
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Virtual Reality (VR)</span>
+            <span class="skill-tag">Swarm Intelligence</span>
+            <span class="skill-tag">UAV/Drone Systems</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://drive.google.com/file/d/1XHRcKnobrHgrDF_-6UR6Qu7vBS-zXSWb/view" target="_blank" class="modal-link">Link</a>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I investigated predator-prey behavioral dynamics in UAV swarms, exploring how multi-agent systems could coordinate in competitive scenarios. I built a ROS-Unity integration achieving sub-80ms latency for real-time VR simulations, enabling researchers to visualize and interact with swarm behaviors in immersive environments.</p>
+          <p>The simulation framework modeled emergent behaviors in multi-agent collaboration, providing insights into coordination strategies, pursuit-evasion tactics, and collective decision-making. This research had applications in autonomous drone systems for search-and-rescue operations, surveillance, and adversarial robotics scenarios where multiple agents must adapt to dynamic, competitive environments.</p>
+          <p>Submitted to HRI 2020, a ACM/IEEE International Conference on Human-Robot Interaction.</p>
+        </div>
+        <img src="images/Sheep_Swarm.jpg" alt="Sheep Swarm" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+        <img src="images/Unity_ROS.png" alt="Unity ROS" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal10">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal10')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">RAG Systems & Quantum Deepfake Detection</h2>
+          <div class="project-venue">AI Research Intern | Team Lead</div>
+          <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
+            <span class="skill-tag">Embedding Models</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Product Quantization</span>
+            <span class="skill-tag">Milvus</span>
+            <span class="skill-tag">Document Retrieval Systems</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>Led the technical design and research architecture for a comprehensive benchmarking framework evaluating embedding generation and vector quantization techniques for Tech Mahindra's SharePoint Retrieval-Augmented Generation (RAG) system. Coordinated a team of interns to develop a Python-based pipeline addressing performance and scalability challenges in enterprise document retrieval systems.</p>
+          <p>Designed a modular five-component architecture encompassing PDF document processing with PyMuPDF, embedding generation using the Nomic model (768-dimensional vectors), vector database operations with Milvus Lite, Product Quantization benchmarking with FAISS, and comprehensive reporting analytics. The system was architected to achieve 8-32x compression ratios while maintaining search accuracy through systematic evaluation of quantization parameters (16 subvectors, 4-8 bits per subvector).</p>
+          <p>Conducted extensive research on vector quantization methods, synthesizing technical knowledge from foundational papers on Product Quantization and modern similarity search approaches. Established technology stack decisions, distributed team responsibilities, and provided technical mentorship on embedding models, vector databases, and accuracy-storage trade-offs. Created detailed architectural specifications and experimental workflow design covering initialization, document processing, embedding generation, vector storage, benchmarking, and results reporting phases.</p>
+        </div>
+        <img src="images/Vect_Quant.png" alt="Vector Quantization" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal11">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal11')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">ICML 2026 Reproduction Challenge</h2>
+          <div class="project-venue">Open Source · Hugging Face</div>
+          <div class="project-authors">Nishka Katoch</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Open Source</span>
+            <span class="skill-tag">Hugging Face</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>Reproduced three papers spanning LLM evaluation, agent behavior and cross-view geolocation.</p>
+
+          <h3>Who Can We Trust? LLM-as-a-Jury for Comparative Assessment</h3>
+          <p>Introduces BT-σ, a judge-aware extension of the Bradley–Terry model that jointly infers item rankings and per-judge reliability from pairwise LLM comparisons. Addresses the problem that LLM judges vary in accuracy and consistency rather than being equally trustworthy.</p>
+          <p><a href="https://huggingface.co/spaces/Nish228/repro-who-can-we-trust-llm-as-a-jury-for-comparative-assessment" target="_blank" class="modal-link">View Reproduction</a></p>
+
+          <h3>Must All Negatives Be Pushed Away Equally? Uncertainty-Aware Cross-View Geo-Localization</h3>
+          <p>Models per-sample uncertainty with a Normal Inverse Gamma distribution to weight negative pairs unevenly during contrastive training, instead of pushing every negative away with equal force. Aims to improve matching between ground-level and satellite imagery for geo-localization.</p>
+          <p><a href="https://huggingface.co/spaces/Nish228/repro-must-all-negatives-be-pushed-away-equally-uncertainty-aware-cross-view-geo-localization-vi" target="_blank" class="modal-link">View Reproduction</a></p>
+
+          <h3>When Does Predictive Inverse Dynamics Outperform Behavior Cloning?</h3>
+          <p>Compares Predictive Inverse Dynamics Models (PIDM) against standard Behavior Cloning (BC) for imitation learning, showing PIDMs trade added prediction bias for reduced variance. Finds PIDMs reach comparable performance with far fewer demonstrations than BC in navigation tasks.</p>
+          <p><a href="https://huggingface.co/spaces/Nish228/pidm-vs-bc-repro" target="_blank" class="modal-link">View Reproduction</a></p>
+        </div>
+        <img src="images/hf_2026_certificate.png" alt="ICML 2026 Reproduction Challenge Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal12">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal12')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">UAV Scene Matching</h2>
+          <div class="project-venue">AI Engineer</div>
+          <div class="project-authors">Inferigence Quotient</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Vision Transformers (ViT)</span>
+            <span class="skill-tag">Cross-View Geo-Localization</span>
+            <span class="skill-tag">IVF Retrieval</span>
+            <span class="skill-tag">Thermal Imaging</span>
+            <span class="skill-tag">Model Quantization</span>
+            <span class="skill-tag">TensorRT</span>
+            <span class="skill-tag">Embedded Systems</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I built a cross-view localization system that determines a UAV's position by matching its onboard imagery against a satellite reference database, enabling navigation in GPS-denied environments. The pipeline embeds both UAV and satellite imagery using Vision Transformers and retrieves the closest matching reference tile with an IVF (Inverted File Index) index for fast approximate nearest-neighbor search over large-scale satellite coverage, reaching 92% Recall@1 — correctly identifying the true location as the top candidate in the vast majority of queries.</p>
+          <p>I extended the system beyond visible-spectrum imagery to also match against thermal imagery, letting the UAV localize itself in low-visibility conditions such as night operations, fog, or smoke where standard optical cameras fail. To make the system viable for onboard deployment, I optimized the inference pipeline with model quantization and TensorRT FP16 precision, accelerating scene-matching time by 15× while staying within 1% of baseline accuracy, bringing the full pipeline within real-time constraints on the embedded flight system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    lucide.createIcons();
+
+    // Theme Toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const themeIcon = document.querySelector('.theme-icon');
+      const currentTheme = html.getAttribute('data-theme');
+
+      if (currentTheme === 'dark') {
+        html.removeAttribute('data-theme');
+        themeIcon.textContent = '🌙';
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        themeIcon.textContent = '☀️';
+      }
+    }
+
+    // Modal Functions
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
+      document.body.style.overflow = 'auto';
+      clearHashIfMatches(modalId);
+    }
+
+    function clearHashIfMatches(modalId) {
+      if (window.location.hash === '#' + modalId) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Close modal when clicking outside
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal(this.id);
+        }
+      });
+    });
+
+    // Open a modal directly if the URL links to it (e.g. #modal11)
+    function openModalFromHash() {
+      const id = window.location.hash.slice(1);
+      const target = id && document.getElementById(id);
+      if (target && target.classList.contains('modal')) {
+        openModal(id);
+      }
+    }
+    openModalFromHash();
+    window.addEventListener('hashchange', openModalFromHash);
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find ~ -maxdepth 4 -iname \"*gold-mine*\" 2>/dev/null; echo \"---\"; find /Users/nishka/Developer/Projects/nish228.github.io-main -iname \"*gold-mine*\" 2>/dev/null)",
+      "Read(//Users/nishka/**)"
+    ]
+  }
+}

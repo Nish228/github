@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nish228.github.io/sitemap.xml

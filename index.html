@@ -1,0 +1,697 @@
+<!DOCTYPE HTML>
+<html lang="en" data-theme="dark">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Nishka Katoch</title>
+  <meta name="author" content="Nishka Katoch">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="images/Initial_Cross.png">
+  <link rel="shortcut icon" type="image/png" href="images/Initial_Cross.png">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Nishka Katoch is a machine learning researcher and AI Engineer (Mila, University of Montreal) working in computer vision, generative AI, and AI safety. Portfolio, publications, and projects.">
+  <meta name="keywords" content="Nishka Katoch, machine learning researcher, AI engineer, computer vision, generative AI, Mila, University of Montreal, NeuroPoly, AI safety">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nish228.github.io/">
+ 
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Nishka Katoch — AI Engineer · Generative AI · AI Safety">
+  <meta property="og:description" content="ML researcher and AI Engineer (Mila, University of Montreal). Computer vision, generative AI, and AI safety. Portfolio, publications, and projects.">
+  <meta property="og:url" content="https://nish228.github.io/">
+  <meta property="og:image" content="https://nish228.github.io/images/Nishka-portrait.jpg">
+  <meta property="og:site_name" content="Nishka Katoch">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nishka Katoch",
+      "url": "https://nish228.github.io/",
+      "image": "https://nish228.github.io/images/Nishka-portrait.jpg",
+      "jobTitle": "AI Engineer / Machine Learning Researcher",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Inferigence Quotient",
+        "url": "https://inferq.com/"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Montreal",
+          "url": "https://www.umontreal.ca/en/"
+        },
+        {
+          "@type": "Organization",
+          "name": "Mila - Quebec AI Institute",
+          "url": "https://mila.quebec/en"
+        }
+      ],
+      "knowsAbout": [
+        "Machine Learning",
+        "Computer Vision",
+        "Generative AI",
+        "Medical Imaging",
+        "Diffusion Models",
+        "AI Safety",
+        "Domain Adaptation"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/nishka-katoch/",
+        "https://github.com/Nish228"
+      ]
+    }
+  </script>
+  <meta name="google-site-verification" content="4E_8cf5OIIIRwkPVoyUDUvXLuEiYT2OIzqQrqq69cFU" />
+</head>
+
+<body class="has-fixed-footer">
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="nav-brand">Nishka Katoch</div>
+      <div class="nav-links">
+        <a href="data/Nishka_Katoch_CV.pdf" target="_blank">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" onclick="toggleTheme()">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>Nishka Katoch</h1>
+        <div class="tagline">AI Engineer · Generative AI · AI Safety</div>
+        <p class="intro">
+          I'm an AI Engineer with an M.Sc. in Computer Science from <a href="https://www.umontreal.ca/en/" target="_blank">The University of Montreal</a> and <a href="https://mila.quebec/en" target="_blank">Mila</a>. My background is in computer vision, generative models, and building ML systems for real-world applications. I currently work at <a href="https://inferq.com/" target="_blank">Inferigence Quotient</a> on computer vision systems for UAV localization and real-time deployment.
+        </p>
+        <p class="research">
+          I pursued my Master's as part of the <a href="https://neuro.polymtl.ca/" target="_blank">NeuroPoly Lab</a> at <a href="https://www.polymtl.ca/en/" target="_blank">Polytechnique Montréal</a> under the supervision of <a href="https://scholar.google.com/citations?user=6cAZ028AAAAJ&hl=en" target="_blank">Prof. Julien Cohen-Adad</a> and <a href="https://scholar.google.com/citations?user=g0k3SjcAAAAJ&hl=en" target="_blank">Prof. Guy Wolf</a>, where my thesis explored multi-contrast image translation for axon and myelin segmentation generalization to OOD data using latent diffusion based pipelines. 
+        </p>
+        <p>
+         Outside of work, I like crochet, knitting, exploring new cafes, thrifting, and collecting way too many things on Pinterest.
+        </p>
+      </div>
+      <div class="profile-card">
+        <img src="images/Nishka-portrait.jpg" alt="Nishka Katoch" class="profile-img">
+        <div class="profile-details">
+            <div class="profile-item" onclick="openInfoModal('locationModal')" style="cursor: pointer;">
+                <span class="profile-icon"><i data-lucide="map-pin" class="icon"></i></span>
+                <span class="profile-text">Montreal</span>
+            </div>
+            <div class="profile-item" onclick="openInfoModal('hobbiesModal')" style="cursor: pointer;">
+                <span class="profile-icon"><i data-lucide="sparkles" class="icon"></i></span>
+                <span class="profile-text">Hobbies</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section class="interests-with-image" id="interests">
+      <h2>Areas I'm Exploring</h2>
+      <div class="interest-tabs" role="tablist">
+        <button class="interest-tab active" role="tab" aria-selected="true" data-tab="ai-safety" onclick="showInterestTab('ai-safety')">AI Safety</button>
+        <button class="interest-tab" role="tab" aria-selected="false" data-tab="ai-engineering" onclick="showInterestTab('ai-engineering')">AI Engineering</button>
+        <button class="interest-tab" role="tab" aria-selected="false" data-tab="generative-ai" onclick="showInterestTab('generative-ai')">Generative AI</button>
+      </div>
+      <div class="interest-panels">
+        <div class="interest-panel active visible" data-panel="ai-safety" role="tabpanel">
+          <p>I'm increasingly interested in understanding how models and agents behave when their incentives, oversight, or environment changes. I've been exploring this through independent alignment research, agent evaluations, ARENA, and reproducing recent research through Hugging Face.</p>
+        </div>
+        <div class="interest-panel" data-panel="ai-engineering" role="tabpanel">
+          <p>My engineering background is in building and deploying ML systems. I currently work on UAV localization and cross-view image matching, including visible and thermal imagery, with a focus on making vision models fast enough for real-time deployment.</p>
+        </div>
+        <div class="interest-panel" data-panel="generative-ai" role="tabpanel">
+          <p>My graduate research explored latent diffusion models for biomedical imaging, including generating synthetic data to improve segmentation on unseen domains. More recently, I've been working through LLM and generative AI methods as part of my research and engineering work.</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <h2>Selected Projects & Publications</h2>
+      <div class="projects-grid">
+        <a href="blog/gold-mine-ai-deception.html" class="project-card">
+            <img src="images/grid-overview.png" alt="Grid Overview" class="project-image">
+            <div class="project-content">
+                <div class="project-title">Survival Over Scrutiny: Probing Oversight Evasion in an LLM Agent</div>
+                <div class="project-venue">Blog · AI Safety</div>
+                <div class="project-authors">2026</div>
+                <div class="project-description">What happens when an LLM agent is told to be transparent, but is also given a strong incentive to avoid being monitored? A small gold-mining experiment in oversight evasion, reward hacking, and rationalization.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Read post</div>
+            </div>
+        </a>
+
+        <div class="project-card" onclick="openModal('modal11')">
+            <img src="images/hf_icml_img.png" alt="ICML Reproduction Challenge" class="project-image">
+            <div class="project-content">
+                <div class="project-title">ICML 2026 Reproduction Challenge</div>
+                <div class="project-venue">Open Source</div>
+                <div class="project-authors">Hugging Face</div>
+                <div class="project-description">Reproduced three papers spanning LLM evaluation, agent behavior and cross-view geolocation.</div>
+                <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal12')">
+          <div class="project-content">
+            <div class="project-title">UAV Scene Matching</div>
+            <div class="project-venue">AI Engineer</div>
+            <div class="project-authors">Inferigence Quotient</div>
+            <div class="project-description">Built cross-view localization systems matching UAV imagery against satellite and thermal imagery.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal2')">
+          <img src="images/thesis_process.png" alt="Thesis Project" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Multi-contrast Image Translation for Axon Segmentation</div>
+            <div class="project-venue">Master's Thesis</div>
+            <div class="project-authors"><strong>Nishka Katoch</strong>, Julien Cohen-Adad, Guy Wolf</div>
+            <div class="project-description">Multi-contrast Image-to-Image Translation Framework to improve Axon and Myelin segmentation in histological images.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal1')">
+          <img src="images/miccai_res.png" alt="MICCAI Project" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Unpaired Modality Translation for Pseudo Labeling</div>
+            <div class="project-venue">MICCAI 2024</div>
+            <div class="project-authors">Arthur Boschet, Armand Collin, <strong>Nishka Katoch</strong>, Julien Cohen-Adad</div>
+            <div class="project-description">Unpaired image translation method to generate pseudo labels for histology image segmentation without requiring annotations in the target domain.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openModal('modal10')">
+          <img src="images/Vect_Quant.png" alt="Makers Lab" class="project-image">
+          <div class="project-content">
+            <div class="project-title">Vector Quantization Benchmarking for RAG Systems</div>
+            <div class="project-venue">AI Research Intern | Team Lead</div>
+            <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+            <div class="project-description"> Led technical architecture and research for a comprehensive vector quantization benchmarking framework, designing a modular pipeline achieving 8-32x compression ratios for Tech Mahindra's SharePoint document retrieval system.</div>
+            <div class="project-link-indicator"><i data-lucide="link" class="icon"></i> Click for details</div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-show-all">
+        <a href="projects.html" class="show-all-btn">Show all projects →</a>
+      </div>
+    </section>
+  </div>
+
+  <!-- News Timeline -->
+    <section class="news-section" id="news">
+      <h2>Recent Updates</h2>
+      <div class="timeline-wrapper">
+        <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2026</div>
+          <div class="timeline-content">Joined <a href="https://inferq.com/" target="_blank">Inferigence Quotient</a> as a AI Engineer!</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2025</div>
+          <div class="timeline-content">Joined <a href="https://www.techmahindra.com/makers-lab/" target="_blank">Maker's Lab, Tech Mahindra</a> as a ML Research Intern.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Jan 2025</div>
+          <div class="timeline-content">Master's thesis <a href="https://hdl.handle.net/1866/41174" target="_blank">Multi-contrast image-to-image translation for axon and myelin segmentation</a> accepted!</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">July 2024</div>
+          <div class="timeline-content">Paper titled <a href="https://link.springer.com/chapter/10.1007/978-3-031-72744-3_6" target="_blank">Unpaired Modality Translation for Pseudo Labeling of Histology Images</a> accepted at MICCAI 2024.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">April 2024</div>
+          <div class="timeline-content">Joined <a href="https://builtgreencanada.ca/custom-quality-build-ltd" target="_blank">Custom Quality Build</a> as an AI development intern.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Dec 2023</div>
+          <div class="timeline-content">Joined <a href="https://www.techmahindra.com/makers-lab/" target="_blank">Maker's Lab, Tech Mahindra</a> as a ML Research Intern.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Sep 2021</div>
+          <div class="timeline-content">Started Research Master's at <a href="https://mila.quebec/en" target="_blank">Mila</a> and <a href="https://www.umontreal.ca/en/" target="_blank">UMontreal</a> with Prof. Julien Cohen-Adad and Prof. Guy Wolf.</div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">June 2020</div>
+            <div class="timeline-content">Joined <a href="https://cris.org.in/" target="_blank">CRIS</a>, Delhi as Web Application Development Intern.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">May 2018</div>
+            <div class="timeline-content">Joined <a href="https://iiitd.ac.in/" target="_blank">IIIT Delhi</a> as a Research Assistant with <a href="https://scholar.google.com/citations?user=qqwyAwoAAAAJ&hl=en" target="_blank">Prof. P.B. Sujit</a>.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">July 2017</div>
+            <div class="timeline-content">Started B.Tech in Computer Science at <a href="http://www.banasthali.org/banasthali/wcms/en/home/" target="_blank">Banasthali University</a>.</div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <h3>Let's Connect</h3>
+      <div class="footer-links">
+        <a href="data/Nishka_Katoch_CV.pdf" target="_blank">CV</a>
+        <a href="mailto:nishkakatoch@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/nishka-katoch/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Nish228" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Language Modal - Updated (Smaller, No TOEFL, Rectangular Bars) -->
+<!-- <div class="modal" id="languageModal">
+    <div class="modal-content language-modal-content">
+      <button class="modal-close" onclick="closeInfoModal('languageModal')">×</button>
+      <div class="modal-body">
+        <h2 class="modal-title">Language Proficiency</h2>
+        
+        <div class="language-bar">
+          <label>English</label>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 0%" data-width="100%">
+              <span class="bar-percentage">Fluent</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="language-bar">
+          <label>Hindi</label>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 0%" data-width="100%">
+              <span class="bar-percentage">Native</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="language-bar">
+          <label>French</label>
+          <div class="bar-container">
+            <div class="bar-fill" style="width: 0%" data-width="70%">
+              <span class="bar-percentage">Intermediate</span>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+   -->
+<!-- Hobbies Modal - Updated (Larger) -->
+  <div class="modal" id="hobbiesModal">
+    <div class="modal-content hobbies-modal-content">
+      <button class="modal-close" onclick="closeInfoModal('hobbiesModal')">×</button>
+      <div class="modal-body">
+        <h2 class="modal-title">Hobbies & Interests</h2>
+        
+        <div class="hobbies-grid">
+          <div class="hobby-item">
+            <img src="images/crochet.webp" alt="Crochet">
+            <h3>🧶 Crochet</h3>
+            <p><strong>Favorite Project:</strong><br>Existential Crisi Tapestry</p>
+          </div>
+          <div class="hobby-item">
+            <img src="images/knit.png" alt="Knitting">
+            <h3>🧵 Knitting</h3>
+            <p><strong>Current Creation:</strong><br>Tied & True Tank Top</p>
+          </div>
+          <div class="hobby-item">
+            <img src="images/sophie's_world.jpg" alt="Philosophy">
+            <h3>📚 Philosophy</h3>
+            <p><strong>Current Interest:</strong><br>Sophie's World</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <!-- Location Modal - Updated (Fixed opening issue) -->
+  <div class="modal" id="locationModal">
+    <div class="modal-content info-modal-content">
+      <button class="modal-close" onclick="closeInfoModal('locationModal')">×</button>
+      <div class="modal-body">
+        <h2 class="modal-title">My Favorite Places in Montreal</h2>
+        <div class="map-container">
+          <!-- Link to the Map: https://umap.openstreetmap.fr/en/map/untitled-map_1294605  -->
+          <iframe src="https://umap.openstreetmap.fr/en/map/untitled-map_1294605?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=none&captionBar=false&captionMenus=true" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p style="margin-top: 20px; color: var(--text-secondary); text-align: center;">Hover over the pins to see my favorite spots!</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Project Modals -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal1')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Unpaired Modality Translation for Pseudo Labeling of Histology Images</h2>
+          <div class="project-venue">MICCAI 2024</div>
+          <div class="project-authors">Arthur Boschet, Armand Collin, <strong>Nishka Katoch</strong>, Julien Cohen-Adad</div>
+          <div class="modal-skills">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">GANs</span>
+            <span class="skill-tag">Domain Adaptation</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">Medical Imaging</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-72744-3_6" target="_blank" class="modal-link">Paper</a>
+          </div>
+        </div>
+        <div class="modal-description">
+            <p>Addressing the critical challenge of limited annotated data in biomedical imaging, I developed a microscopy pseudo-labeling pipeline using unsupervised image translation techniques. The system generated high-quality pseudo labels by translating between labeled and unlabeled domains without requiring prior annotation in the target domain. By implementing a SyncDiff-based domain adaptation pipeline with VQ-VAE compression, I improved segmentation accuracy on out-of-distribution microscopy data by 12% while accelerating training speeds and maintaining 95% image fidelity.</p>
+            <p>The method was validated across three increasingly dissimilar image domains, achieving a mean Dice score of 0.736 ± 0.005 on Scanning Electron Microscopy (SEM) datasets using synthetic data translated from Transmission Electron Microscopy (TEM). This approach significantly accelerated the annotation process by providing researchers with refined starting points for manual labeling, bridging the gap between different microscopy modalities in biomedical research.</p>
+        </div>
+        <img src="images/miccai_figure_methods.png" alt="MICCAI Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal2')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">Multi-contrast Image-to-Image Translation for Axon and Myelin Segmentation</h2>
+          <div class="project-venue">Master's Thesis</div>
+          <div class="project-authors"><strong>Nishka Katoch</strong>, Julien Cohen-Adad, Guy Wolf</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Diffusion Models</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">Image Translation</span>
+            <span class="skill-tag">Privacy-Preserving AI</span>
+            <span class="skill-tag">Medical Imaging</span>
+            <span class="skill-tag">Segmentation</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="modal-links">
+            <a href="https://hdl.handle.net/1866/41174" target="_blank" class="modal-link">Thesis</a>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>To address data scarcity in neurodegenerative disease research, I developed a privacy-preserving image translation framework using latent diffusion models for histological image analysis. The system converted source images into latent encodings and reconstructed them across different modalities using guided diffusion models, with segmentation masks integrated directly into the latent space. This architecture enabled domain adaptation without requiring access to real patient data, ensuring compliance with medical privacy regulations.</p>
+          <p>The framework achieved an 80% Dice score using synthetic contrast data, demonstrating effective segmentation performance on neurological tissue across diverse electron microscopy modalities. By minimizing the number of translation models required and operating entirely on latent encodings, this approach offered a scalable solution for studying Alzheimer's disease and multiple sclerosis while maintaining strict data privacy standards.</p>
+        </div>
+        <img src="images/thesis_process.png" alt="Thesis Project" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal10">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal10')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">RAG Systems & Quantum Deepfake Detection</h2>
+          <div class="project-venue">AI Research Intern | Team Lead</div>
+          <div class="project-authors">Tech Mahindra, Maker's Lab</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span>
+            <span class="skill-tag">Embedding Models</span>
+            <span class="skill-tag">Vector Databases</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Product Quantization</span>
+            <span class="skill-tag">Milvus</span>
+            <span class="skill-tag">Document Retrieval Systems</span>
+          </div>
+        </div>
+        <!-- <img src="images/alz_rn_umap.png" alt="Alzheimer's Study" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;"> -->
+        <div class="modal-description">
+          <p>Led the technical design and research architecture for a comprehensive benchmarking framework evaluating embedding generation and vector quantization techniques for Tech Mahindra's SharePoint Retrieval-Augmented Generation (RAG) system. Coordinated a team of interns to develop a Python-based pipeline addressing performance and scalability challenges in enterprise document retrieval systems.</p>
+          <p>Designed a modular five-component architecture encompassing PDF document processing with PyMuPDF, embedding generation using the Nomic model (768-dimensional vectors), vector database operations with Milvus Lite, Product Quantization benchmarking with FAISS, and comprehensive reporting analytics. The system was architected to achieve 8-32x compression ratios while maintaining search accuracy through systematic evaluation of quantization parameters (16 subvectors, 4-8 bits per subvector).</p>
+          <p>Conducted extensive research on vector quantization methods, synthesizing technical knowledge from foundational papers on Product Quantization and modern similarity search approaches. Established technology stack decisions, distributed team responsibilities, and provided technical mentorship on embedding models, vector databases, and accuracy-storage trade-offs. Created detailed architectural specifications and experimental workflow design covering initialization, document processing, embedding generation, vector storage, benchmarking, and results reporting phases.</p>
+        </div>
+        <img src="images/Vect_Quant.png" alt="Vector Quantization" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal11">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal11')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">ICML 2026 Reproduction Challenge</h2>
+          <div class="project-venue">Open Source · Hugging Face</div>
+          <div class="project-authors">Nishka Katoch</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Open Source</span>
+            <span class="skill-tag">Hugging Face</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>Reproduced three papers spanning LLM evaluation, agent behavior and cross-view geolocation.</p>
+
+          <h3>Who Can We Trust? LLM-as-a-Jury for Comparative Assessment</h3>
+          <p>Introduces BT-σ, a judge-aware extension of the Bradley–Terry model that jointly infers item rankings and per-judge reliability from pairwise LLM comparisons. Addresses the problem that LLM judges vary in accuracy and consistency rather than being equally trustworthy.</p>
+          <p><a href="https://huggingface.co/spaces/Nish228/repro-who-can-we-trust-llm-as-a-jury-for-comparative-assessment" target="_blank" class="modal-link">View Reproduction</a></p>
+
+          <h3>Must All Negatives Be Pushed Away Equally? Uncertainty-Aware Cross-View Geo-Localization</h3>
+          <p>Models per-sample uncertainty with a Normal Inverse Gamma distribution to weight negative pairs unevenly during contrastive training, instead of pushing every negative away with equal force. Aims to improve matching between ground-level and satellite imagery for geo-localization.</p>
+          <p><a href="https://huggingface.co/spaces/Nish228/repro-must-all-negatives-be-pushed-away-equally-uncertainty-aware-cross-view-geo-localization-vi" target="_blank" class="modal-link">View Reproduction</a></p>
+
+          <h3>When Does Predictive Inverse Dynamics Outperform Behavior Cloning?</h3>
+          <p>Compares Predictive Inverse Dynamics Models (PIDM) against standard Behavior Cloning (BC) for imitation learning, showing PIDMs trade added prediction bias for reduced variance. Finds PIDMs reach comparable performance with far fewer demonstrations than BC in navigation tasks.</p>
+          <p><a href="https://huggingface.co/spaces/Nish228/pidm-vs-bc-repro" target="_blank" class="modal-link">View Reproduction</a></p>
+        </div>
+        <img src="images/hf_2026_certificate.png" alt="ICML 2026 Reproduction Challenge Certificate" style="width: 100%; border-radius: 8px; margin-bottom: 1.5rem;">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal12">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal('modal12')">×</button>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title">UAV Scene Matching</h2>
+          <div class="project-venue">AI Engineer</div>
+          <div class="project-authors">Inferigence Quotient</div>
+          <div class="modal-skills">
+            <span class="skill-tag">Vision Transformers (ViT)</span>
+            <span class="skill-tag">Cross-View Geo-Localization</span>
+            <span class="skill-tag">IVF Retrieval</span>
+            <span class="skill-tag">Thermal Imaging</span>
+            <span class="skill-tag">Model Quantization</span>
+            <span class="skill-tag">TensorRT</span>
+            <span class="skill-tag">Embedded Systems</span>
+          </div>
+        </div>
+        <div class="modal-description">
+          <p>I built a cross-view localization system that determines a UAV's position by matching its onboard imagery against a satellite reference database, enabling navigation in GPS-denied environments. The pipeline embeds both UAV and satellite imagery using Vision Transformers and retrieves the closest matching reference tile with an IVF (Inverted File Index) index for fast approximate nearest-neighbor search over large-scale satellite coverage, reaching 92% Recall@1 — correctly identifying the true location as the top candidate in the vast majority of queries.</p>
+          <p>I extended the system beyond visible-spectrum imagery to also match against thermal imagery, letting the UAV localize itself in low-visibility conditions such as night operations, fog, or smoke where standard optical cameras fail. To make the system viable for onboard deployment, I optimized the inference pipeline with model quantization and TensorRT FP16 precision, accelerating scene-matching time by 15× while staying within 1% of baseline accuracy, bringing the full pipeline within real-time constraints on the embedded flight system.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    //Icons
+    lucide.createIcons();
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.modal').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            if (this.id === 'locationModal' || this.id === 'languageModal' || this.id === 'hobbiesModal') {
+              closeInfoModal(this.id);
+            } else {
+              closeModal(this.id);
+            }
+          }
+        });
+      });
+  
+      // Initialize skills carousel
+      updateSkillsCarousel();
+
+      // Open a modal directly if the URL links to it (e.g. #modal11)
+      openModalFromHash();
+    });
+
+    window.addEventListener('hashchange', openModalFromHash);
+
+    function openModalFromHash() {
+      const id = window.location.hash.slice(1);
+      const target = id && document.getElementById(id);
+      if (target && target.classList.contains('modal')) {
+        openModal(id);
+      }
+    }
+
+    function clearHashIfMatches(modalId) {
+      if (window.location.hash === '#' + modalId) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      }
+    }
+
+    // Skills Carousel Variables
+    let currentSkillSlide = 0;
+    const totalSkillSlides = 6;
+
+    // Skills Carousel Functions
+    function scrollSkills(direction) {
+      currentSkillSlide += direction;
+      
+      // Loop around
+      if (currentSkillSlide < 0) {
+        currentSkillSlide = totalSkillSlides - 1;
+      } else if (currentSkillSlide >= totalSkillSlides) {
+        currentSkillSlide = 0;
+      }
+      
+      updateSkillsCarousel();
+    }
+
+    function goToSkillSlide(index) {
+      currentSkillSlide = index;
+      updateSkillsCarousel();
+    }
+
+    function updateSkillsCarousel() {
+      const carousel = document.querySelector('.skills-carousel');
+      const dots = document.querySelectorAll('.skills-dot');
+      
+      if (carousel) {
+        carousel.style.transform = `translateX(-${currentSkillSlide * 100}%)`;
+      }
+      
+      // Update dots
+      dots.forEach((dot, index) => {
+        if (index === currentSkillSlide) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    }
+    // Theme Toggle
+    function toggleTheme() {
+      const html = document.documentElement;
+      const themeIcon = document.querySelector('.theme-icon');
+      const currentTheme = html.getAttribute('data-theme');
+      
+      if (currentTheme === 'dark') {
+        html.removeAttribute('data-theme');
+        themeIcon.textContent = '🌙';
+      } else {
+        html.setAttribute('data-theme', 'dark');
+        themeIcon.textContent = '☀️';
+      }
+    }
+    // Interests Tabs (AI Safety / AI Engineering / Generative AI)
+    function showInterestTab(tabId) {
+      const tabs = document.querySelectorAll('.interest-tab');
+      const current = document.querySelector('.interest-panel.active');
+      const next = document.querySelector('.interest-panel[data-panel="' + tabId + '"]');
+      if (!next || current === next) return;
+
+      tabs.forEach(tab => {
+        const isActive = tab.dataset.tab === tabId;
+        tab.classList.toggle('active', isActive);
+        tab.setAttribute('aria-selected', String(isActive));
+      });
+
+      const revealPanel = panel => {
+        panel.classList.add('active');
+        void panel.offsetWidth;
+        requestAnimationFrame(() => panel.classList.add('visible'));
+      };
+
+      if (current) {
+        current.classList.remove('visible');
+        setTimeout(() => {
+          current.classList.remove('active');
+          revealPanel(next);
+        }, 300);
+      } else {
+        revealPanel(next);
+      }
+    }
+    // Info Modal Functions (Location, Language, Hobbies)
+    function openInfoModal(modalId) {
+    document.getElementById(modalId).classList.add('active');
+    document.body.style.overflow = 'hidden';
+    
+    // Animate language bars when modal opens
+    if (modalId === 'languageModal') {
+        setTimeout(() => {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            bar.style.width = bar.getAttribute('data-width');
+        });
+        }, 100);
+    }
+    }
+
+    function closeInfoModal(modalId) {
+    document.getElementById(modalId).classList.remove('active');
+    document.body.style.overflow = 'auto';
+
+    // Reset language bars
+    if (modalId === 'languageModal') {
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+        bar.style.width = '0%';
+        });
+    }
+    clearHashIfMatches(modalId);
+    }
+
+    // Modal Functions
+    function openModal(modalId) {
+      document.getElementById(modalId).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
+      document.body.style.overflow = 'auto';
+      clearHashIfMatches(modalId);
+    }
+
+    // Close modal when clicking outside
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal(this.id);
+        }
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
